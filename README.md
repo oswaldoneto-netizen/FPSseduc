@@ -22,3 +22,7 @@
 - Leaderboard Top 10 atualizado a cada 5 segundos.
 - Som simples gerado no navegador, sem arquivos externos de áudio.
 - O leaderboard e os níveis ficam em memória enquanto o servidor estiver rodando. Para persistência mesmo após reiniciar o Render, troque o Map por banco de dados (ex.: PostgreSQL).
+
+
+## Estrutura simplificada para Render
+Todos os arquivos (`index.html`, `style.css`, `game.js`, `server.js` e `package.json`) podem ficar na mesma pasta.
