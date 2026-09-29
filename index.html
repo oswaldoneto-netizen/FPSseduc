@@ -2,36 +2,36 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <title>FPS 3D Online</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="menu">
   <div class="panel">
-    <h1>FPS 3D ONLINE</h1>
-    <p>Entre no mapa, encontre outros jogadores e sobreviva.</p>
+    <div class="logo">FPS <span>3D</span> ONLINE</div>
+    <p>Entre no mapa e encontre outros jogadores.</p>
     <input id="name" maxlength="18" placeholder="Seu nick" value="Player">
     <div class="mode-title">Escolha seus controles</div>
     <div class="modes">
-      <button id="pcBtn">🖥️ Computador</button>
-      <button id="mobileBtn">📱 Celular</button>
+      <button id="pcBtn">🖥️ PC</button>
+      <button id="mobileBtn" class="selected">📱 CELULAR</button>
     </div>
     <button id="play" class="play">JOGAR</button>
-    <div class="tip">Seu level e seu nick ficam salvos nesta sessão do servidor.</div>
   </div>
 </div>
 
 <div id="hud" class="hidden">
   <div class="top">
-    <span>👥 Online: <b id="online">0</b></span>
-    <span>⭐ Level: <b id="level">1</b></span>
-    <span>❤️ <b id="hp">100</b></span>
+    <div>👥 <span>Online</span> <b id="online">0</b></div>
+    <div>⭐ <span>Level</span> <b id="level">1</b></div>
+    <div>❤️ <b id="hp">100</b></div>
   </div>
   <div id="crosshair">+</div>
   <div id="feed"></div>
-  <div id="board"><h3>TOP 10 — LEVEL</h3><ol id="leaders"></ol></div>
-  <div id="controlsHelp">WASD: mover • Mouse: mirar • Clique: atirar • Espaço: pular</div>
+  <div id="board"><h3>🏆 TOP 10 — LEVEL</h3><ol id="leaders"></ol></div>
+  <div id="controlsHelp">WASD • MOUSE • CLIQUE</div>
+  <div id="weaponName">ASSAULT RIFLE</div>
 </div>
 
 <div id="mobile" class="hidden">
